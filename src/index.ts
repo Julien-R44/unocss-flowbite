@@ -41,7 +41,7 @@ export function presetFlowbite(): Preset {
               padding-left: ${spacing[3]};
               font-size: ${baseFontSize};
               line-height: ${baseLineHeight};
-              --un-shadow: '0 0 #0000';
+              --un-shadow: 0 0 #0000;
             }
 
             [type='text']:focus,
@@ -63,8 +63,8 @@ export function presetFlowbite(): Preset {
               outline-offset: 2px;
               --un-ring-inset: var(--un-empty,/*!*/ /*!*/);
               --un-ring-offset-width: 0px;
-              --un-ring-offset-color: '#fff';
               --un-ring-color: ${theme.colors.blue['600']};
+              --un-ring-offset-color: #fff;
               --un-ring-offset-shadow: var(--un-ring-inset) 0 0 0 var(--un-ring-offset-width) var(--un-ring-offset-color);
               --un-ring-shadow: var(--un-ring-inset) 0 0 0 calc(1px + var(--un-ring-offset-width)) var(--un-ring-color);
               box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow), var(--un-shadow);
